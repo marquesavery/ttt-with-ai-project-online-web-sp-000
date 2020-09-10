@@ -115,6 +115,8 @@ class Game
 
     current_game.player_1.name = first_user
     current_game.player_2.name = second_user
+
+    current_game.play
   end
 
 end
