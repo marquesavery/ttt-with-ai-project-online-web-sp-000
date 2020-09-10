@@ -96,16 +96,16 @@ class Game
       first_user = gets.chomp
       puts "Enter the name of player two (O)."
       second_user = gets.chomp
-      Game.new
+      current_game = Game.new
     elsif game_type == "1"
       puts "Enter the name of the player (X)."
       first_user = gets.chomp
       second_user = "computer two"
-      Game.new(Players::Human.new("X"), Players::Computer.new("O"))
+      current_game = Game.new(Players::Human.new("X"), Players::Computer.new("O"))
     elsif game_type == "0"
       first_user = "computer one"
       second_user = "computer two"
-      Game.new(Players::Computer.new("X"), Players::Computer.new("O"))
+      current_game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"))
     end
 
     @player_1.name = first_user
