@@ -17,5 +17,5 @@ until play_again == "N"
   until play_again == "Y" || "N"
     play_again = gets.chomp
   end
-    
+
 end
