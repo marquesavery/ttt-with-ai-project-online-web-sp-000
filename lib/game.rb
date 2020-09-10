@@ -67,9 +67,10 @@ class Game
   end
 
   def turn
-    puts "#{current_player.name} it is your move"
+    puts "#{current_player.name} it is your move."
     index = current_player.move(@board)
     while @board.valid_move?(index) == false
+      puts "#{current_player.name} it is your move."
       index = current_player.move(@board)
     end
     @board.update(index, current_player)
