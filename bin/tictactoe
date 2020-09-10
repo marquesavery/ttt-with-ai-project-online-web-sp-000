@@ -1,3 +1,23 @@
 #!/usr/bin/env ruby
-
+require 'pry'
 require_relative '../config/environment'
+
+puts "Welome to Tic-Tac-Toe!"
+Game.start
+puts "Would you like to play again? Enter Y/N."
+play_again= " "
+play_again = gets.chomp
+until play_again == "Y" || "N"
+  puts "Please enter Y or N."
+  play_again = gets.chomp
+end
+until play_again == "N"
+  Game.start
+  puts "Would you like to play again? Enter Y/N."
+  play_again = gets.chomp
+  until play_again == "Y" || "N"
+    puts "Please enter Y or N."
+    play_again = gets.chomp
+  end
+end
+puts "Thanks for playing!"
