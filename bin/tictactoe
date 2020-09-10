@@ -22,8 +22,8 @@ elsif game_type == "0"
   second_user = "computer two"
   Game.new(Players::Computer.new("X"), Players::Computer.new("O"))
 end
-
-Game.player_1.name = first_user
+pry
+.player_1.name = first_user
 Game.player_2.name = second_user
 play_again = " "
 until play_again == "N"
