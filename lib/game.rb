@@ -116,7 +116,7 @@ class Game
     play_again = " "
     until play_again == "N"
       current_game.play
-
+      @board.display
       puts "Would you like to play again? Enter Y/N."
       play_again = gets.chomp
     end
