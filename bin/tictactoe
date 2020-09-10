@@ -24,6 +24,7 @@ if game_type == "2"
   Game.new
 elsif game_type == "1"
   Game.new(Players.Human.new("X"), Players::Computer.new("O"))
+elsif game_type == "0"
   @player_1.name = first_user
   @player_2.name = second_user
   play_again = " "
