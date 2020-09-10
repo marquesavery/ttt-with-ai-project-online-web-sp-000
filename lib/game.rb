@@ -122,7 +122,6 @@ class Game
     if play_again == "Y"
       self.start
     end
-    end
   end
 
 end
