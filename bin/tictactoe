@@ -8,6 +8,4 @@ puts "Would you like to play again? Enter Y/N."
 until play_again == "N"
   Game.start
   play_again = gets.chomp
-if play_again == "Y"
-  self.start
 end
