@@ -12,7 +12,7 @@ if game_type == "2"
   puts "Enter the name of player two (O)."
   second_user = gets.chomp
 elsif game_type == "1"
-  puts "Enter the name of the player one (X)."
+  puts "Enter the name of the player (X)."
   first_user = gets.chomp
   second_user = "computer two"
 elsif game_type == "0"
