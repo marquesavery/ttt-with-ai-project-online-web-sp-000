@@ -108,8 +108,8 @@ class Game
       Game.new(Players::Computer.new("X"), Players::Computer.new("O"))
     end
     binding.pry
-    .player_1.name = first_user
-    Game.player_2.name = second_user
+    @player_1.name = first_user
+    @player_2.name = second_user
     play_again = " "
     until play_again == "N"
       Game.play
