@@ -107,7 +107,7 @@ class Game
       second_user = "computer two"
       Game.new(Players::Computer.new("X"), Players::Computer.new("O"))
     end
-    binding.pry
+
     @player_1.name = first_user
     @player_2.name = second_user
     play_again = " "
