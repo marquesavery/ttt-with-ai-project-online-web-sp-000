@@ -120,6 +120,7 @@ class Game
     puts "Would you like to play again? Enter Y/N."
     play_again = gets.chomp
     if play_again == "Y"
+      self.start
     end
   end
 
