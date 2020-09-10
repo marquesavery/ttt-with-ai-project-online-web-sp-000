@@ -3,3 +3,4 @@ require 'pry'
 require_relative '../config/environment'
 
 Game.start
+puts "Would you like to play again?"
