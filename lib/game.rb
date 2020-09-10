@@ -77,6 +77,7 @@ class Game
   def play
     until over?
       turn
+      
     end
     if won?
       puts "Congratulations #{winner}!"
@@ -113,7 +114,7 @@ class Game
     play_again = " "
     until play_again == "N"
       current_game.play
-      
+
       puts "Would you like to play again? Enter Y/N."
       play_again = gets.chomp
     end
