@@ -117,12 +117,7 @@ class Game
     current_game.player_1.name = first_user
     current_game.player_2.name = second_user
 
-    puts "Would you like to play again? Enter Y/N."
-    play_again = gets.chomp
     current_game.play
-    if play_again == "Y"
-      self.start
-    end
   end
 
 end
