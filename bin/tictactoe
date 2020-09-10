@@ -20,3 +20,4 @@ until play_again == "N"
     play_again = gets.chomp
   end
 end
+puts "Thanks for playing!"
