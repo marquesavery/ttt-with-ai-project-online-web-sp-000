@@ -86,4 +86,35 @@ class Game
     end
   end
 
+  def start
+    puts "Welome to Tic-Tac-Toe!"
+    puts "What kind of game do you want to play, 0, 1, 2 player?"
+    game_type = gets.chomp
+
+    if game_type == "2"
+      puts "Enter the name of player one (X)."
+      first_user = gets.chomp
+      puts "Enter the name of player two (O)."
+      second_user = gets.chomp
+      Game.new
+    elsif game_type == "1"
+      puts "Enter the name of the player (X)."
+      first_user = gets.chomp
+      second_user = "computer two"
+      Game.new(Players::Human.new("X"), Players::Computer.new("O"))
+    elsif game_type == "0"
+      first_user = "computer one"
+      second_user = "computer two"
+      Game.new(Players::Computer.new("X"), Players::Computer.new("O"))
+    end
+    binding.pry
+    .player_1.name = first_user
+    Game.player_2.name = second_user
+    play_again = " "
+    until play_again == "N"
+      Game.play
+      puts "Would you like to play again? Enter Y/N."
+      play_again = gets.chomp
+    end
+
 end
