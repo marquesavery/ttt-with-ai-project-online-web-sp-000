@@ -81,9 +81,11 @@ class Game
     end
     if won?
       puts "Congratulations #{winner}!"
+      @board.display
     end
     if draw?
       puts "Cat's Game!"
+      @board.display
     end
   end
 
