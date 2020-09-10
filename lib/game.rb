@@ -115,8 +115,12 @@ class Game
 
     current_game.player_1.name = first_user
     current_game.player_2.name = second_user
-
-    current_game.play
+    play_again = " "
+    until play_again == "N"
+      current_game.play
+      puts "Would you like to play again? Enter Y/N."
+      play_again = gets.chomp
+    end
   end
 
 end
