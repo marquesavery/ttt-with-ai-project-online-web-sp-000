@@ -116,5 +116,6 @@ class Game
       puts "Would you like to play again? Enter Y/N."
       play_again = gets.chomp
     end
+  end
 
 end
