@@ -108,8 +108,8 @@ class Game
       current_game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"))
     end
 
-    @player_1.name = first_user
-    @player_2.name = second_user
+    current_game.player_1.name = first_user
+    current_game.player_2.name = second_user
     play_again = " "
     until play_again == "N"
       play
