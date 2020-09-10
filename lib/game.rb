@@ -77,7 +77,7 @@ class Game
   def play
     until over?
       turn
-      
+      @board.display
     end
     if won?
       puts "Congratulations #{winner}!"
