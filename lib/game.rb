@@ -86,7 +86,7 @@ class Game
     end
   end
 
-  def start
+  def self.start
     puts "Welome to Tic-Tac-Toe!"
     puts "What kind of game do you want to play, 0, 1, 2 player?"
     game_type = gets.chomp
