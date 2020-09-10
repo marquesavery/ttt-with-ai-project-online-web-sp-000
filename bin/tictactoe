@@ -8,6 +8,7 @@ puts "Would you like to play again? Enter Y/N."
 play_again= " "
 play_again = gets.chomp
 until play_again == "Y" || "N"
+  puts "Please enter Y or N"
   play_again = gets.chomp
 end
 until play_again == "N"
